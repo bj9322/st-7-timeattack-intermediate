@@ -7,6 +7,18 @@ import "./App.css";
 // useRef 가 어렵다면 useState 를 사용해서 input value를 관리하는 제어 컴포넌트로 하셔도 좋습니다.
 // 단 제어 컴포넌트 사용 시 useRef 를 본인이 아직 사용할 줄 모른다라고 판단할 수 있겠습니다.
 function App() {
+  const dispatch = useDispatch();
+  const result = useSelector((state) => state.counter.result);
+  const inputRef = useRef();
+
+  const handleAdd = () => {
+    const value = (inputRef.current.value, 0);
+  }
+
+  const hadleDecrease = () => {
+    const  = 
+  }
+  
   return (
     <div className="App">
       <h1>덧셈과 뺄셈이 가능한 앱 만들기</h1>
